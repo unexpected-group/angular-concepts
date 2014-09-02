@@ -1,5 +1,9 @@
 (function(){
   angular.module("myApp", [ ])
+  	.controller('Jugador', function() {
+  		this.name = "Agus";
+  		this.apellido = "Pina";
+  	})
     .directive("viewPanels", function(){
       return {
         replace: true,
