@@ -1,9 +1,5 @@
 (function(){
   angular.module("myApp", [ ])
-  	.controller('Jugador', function() {
-  		this.name = "Agus";
-  		this.apellido = "Pina";
-  	})
     .directive("viewPanels", function(){
       return {
         replace: true,
@@ -22,5 +18,12 @@
         controllerAs: 'panels',
         templateUrl: 'view-panels.html',
       };
-    });
+    })
+     .directive("busquedaJugador", function(){
+      return {
+        replace: true,
+        restrict: 'E',
+        templateUrl: 'busqueda-jugador.html',
+      };
+    })
 })();
