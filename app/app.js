@@ -1,12 +1,22 @@
-'use strict';
+(function(){
+  angular.module("myApp", [ ])
+    .directive("viewPanels", function(){
+      return {
+        replace: true,
+        restrict: 'E',
+        controller: function(){
+          var current = 1;
 
-// Declare app level module which depends on views, and components
-angular.module('myApp', [
-  'ngRoute',
-  'myApp.view1',
-  'myApp.view2',
-  'myApp.version'
-]).
-config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/view1'});
-}]);
+          this.setCurrent = function(index){
+            current = index;
+          };
+
+          this.isCurrent = function(index){
+            return index === current;
+          };
+        },
+        controllerAs: 'panels',
+        templateUrl: 'view-panels.html',
+      };
+    });
+})();
