@@ -1,0 +1,15 @@
+<aside class="panels">
+    <ul class="nav nav-pills nav-justified" role="tablist">
+
+      <li ng-class="{active:panels.isCurrent(1)}"> <a href ng-click="panels.setCurrent(1)"> Generar Equipos </a></li>
+      <li ng-class="{active:panels.isCurrent(2)}"> <a href ng-click="panels.setCurrent(2)"> Buscar Jugadores</a></li>
+
+  </ul>
+
+  <div class="panel" ng-show="panels.isCurrent(1)">
+    <h4> Generar Equipos </h4>
+  </div>
+  <div class="panel" ng-show="panels.isCurrent(2)">
+    <busqueda-jugador> </busqueda-jugador>
+  </div>
+</aside>
