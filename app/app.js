@@ -26,4 +26,11 @@
         templateUrl: 'busqueda-jugador.html',
       };
     })
+     .directive("generarEquipo", function(){
+      return {
+        replace: true,
+        restrict: 'E',
+        templateUrl: 'generar-equipo.html',
+      };
+    })
 })();
