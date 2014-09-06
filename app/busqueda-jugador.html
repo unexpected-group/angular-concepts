@@ -3,6 +3,56 @@
 
 	<header> <h4>BÚSQUEDA DE JUGADORES<h4> </header> 
     
-   	<label> Filtro </label> <input type="text"> </input> 
+   	<!--<label> Filtro </label> <input type="text"> </input>-->
+
+   	<label> Criterio de búsqueda:  </label>
+   	<select> <!--TODO: Los criterios se tienen que agregar solos? -->
+   		<option value="ninguno">Ninguno  </option>
+   		<option value="par">Nombre - Comienza con :  </option>
+   		<option value="impar">Apodo - Contiene :  </option>
+   		<option value="impar">Fec. de Nac. - Anterior a :  </option>
+   		<option value="impar">Handicap - Desde :  </option>
+   		<option value="impar">Handicap - Hasta :  </option>
+   		<option value="impar">Promedio - Desde :  </option>
+   		<option value="impar">Promedio - Hasta :  </option>
+   		<option value="impar">Tuvo infracciones  </option>
+   		<option value="impar">No tuvo infracciones  </option>
+   	</select>
+   	<input type="text"></input>
+ 
+
+   	<hr>
+   	<hr>
+
+   		<table width="1000" cellpadding="100" cellspacing="100" border="1" align="center">  <!-- TODO: Esta tabla se va a llenar sola con los datos de los jugadores-->
+		<tr> 
+			<td width="100" height="30" valign="center" align="center"> 
+				<strong>Nombre</strong> 
+			</td> 
+			<td width="100" height="10" valign="center" align="center"> 
+				<strong>Apodo</strong> 
+			</td> 
+			<td width="100" height="10" valign="center" align="center"> 
+				<strong>Handicap</strong> 
+			</td> 
+			<td width="100" height="10" valign="center" align="center"> 
+				<strong>Promedio</strong> 
+			</td> 
+		</tr> 
+		<tr> 
+			<td width="100" height="10" valign="top"> 
+				NombreJugador1 
+			</td>
+			<td width="100" height="10" valign="top"> 
+				ApodoJugador1
+			</td>
+			<td width="100" height="10" valign="top"> 
+				HandicapJugador1
+			</td> 
+			<td width="100" height="10" valign="top"> 
+				PromedioJugador1
+			</td>  
+		</tr>  
+	</table>
     
 </aside>
